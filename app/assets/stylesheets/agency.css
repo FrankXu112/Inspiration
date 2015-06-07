@@ -265,7 +265,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../assets/header-bg.jpg);
+    background-image: url(http://ucieczkadoraju.pl/wp-content/uploads/2014/06/inspiracje-2.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -285,6 +285,7 @@ header .intro-text .intro-lead-in {
     font-size: 22px;
     font-style: italic;
     line-height: 22px;
+    color: white;
 }
 
 header .intro-text .intro-heading {
@@ -294,6 +295,7 @@ header .intro-text .intro-heading {
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
+    color: white;
 }
 
 @media(min-width:768px) {
