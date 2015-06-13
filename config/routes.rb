@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'stories/homepage'
+  
+resources :stories, only: [:index, :show, :new, :create, :homepage] 
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  experience: MyString
+  job: MyString
+  grades: MyString
+  first_choice: MyString
+  second_choice: MyString
+
+two:
+  name: MyString
+  experience: MyString
+  job: MyString
+  grades: MyString
+  first_choice: MyString
+  second_choice: MyString
