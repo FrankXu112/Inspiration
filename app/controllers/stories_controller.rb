@@ -18,7 +18,7 @@ def create
 
   if @story.save
     redirect_to
-
+  end
 end
 
 def homepage
@@ -27,6 +27,6 @@ end
 
 private
   def story_params
-    params.require(:story).permit(:name, :description, :major, :likes, :dislikes, :) 
+    params.require(:story).permit(:name, :description, :major, :likes, :dislikes) 
   end
 end
