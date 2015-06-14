@@ -11,6 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 85e88f6b89ffb47d541e9242cbd8feabc1a11555
 ActiveRecord::Schema.define(version: 20150613200554) do
 
   create_table "stories", force: :cascade do |t|
@@ -48,4 +53,39 @@ ActiveRecord::Schema.define(version: 20150613200554) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
+<<<<<<< HEAD
+=======
+
+ActiveRecord::Schema.define(version: 20150613185146) do
+
+  create_table "stories", force: :cascade do |t|
+    t.string   "name"
+    t.string   "experience"
+    t.string   "job"
+    t.string   "grades"
+    t.string   "first_choice"
+    t.string   "second_choice"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.string   "study"
+    t.string   "dislike"
+    t.string   "hobby"
+    t.integer  "user_id"
+  end
+
+
+ActiveRecord::Schema.define(version: 20150613182444) do
+
+  create_table "tests", force: :cascade do |t|
+    t.string   "study"
+    t.string   "hobby"
+    t.string   "dislike"
+    t.integer  "user_id"
+    t.integer  "story_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+
+>>>>>>> 85e88f6b89ffb47d541e9242cbd8feabc1a11555
 end

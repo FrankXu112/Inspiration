@@ -1,0 +1,90 @@
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<h2>Start your test</h2>
+
+
+
+<%= form_for @test do |f| %>
+<div>
+  <%= f.label :'Do you know what you want to study?' %>
+
+ <select id="yes_or_no" name="test[yes_or_no]">
+  <option value="" selected="selected">Please select</option>
+  <option value="1" >No</option>
+  <option value="2">Yes</option>
+</select>
+</div>
+
+
+<div id="major" style="visibility:hidden;">
+<%= f.label :'What major do you want to study?' %>
+
+<select name="test[study]">
+  <option value="" selected="selected">Please select</option>
+  <option value="1" >Arts and Humanities</option>
+  <option value="2">Business</option>
+  <option value="3">Health and Medicine</option>
+  <option value="4">Social Sciences</option>
+  <option value="5">Science, Math and Technology</option>
+
+</select>
+</div>
+
+<div id="hobbies" style="visibility:hidden;">
+<%= f.label :'What hobbies do you enjoy?' %>
+
+<select name="test[hobby]">
+  <option value="" selected="selected">Please select</option>
+  <option value="1" >Collecting</option>
+  <option value="2">Arts and Crafts</option>
+  <option value="3">Games</option>
+  <option value="4">Electronics</option>
+  <option value="5">Sports</option>
+  <option value="6">Outdoors</option>
+  <option value="7">Spiritual and Mental</option>
+  <option value="8">Pets</option>
+  <option value="9">Food and Drinks</option>
+
+</select>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<p id="mybutton" style="visibility:hidden;"><%= f.submit :'Get Stories'%></p>
+
+<% end %>
+
+
+
+<script>
+//$(document).on('ready page:load', function() {
+
+$('#yes_or_no').change(function(){
+
+  var myvalue=$('#yes_or_no option:selected').text();
+  if (myvalue=="Yes") {$('#major').css("visibility","visible");$('#hobbies').css("visibility","visible"); $('#mybutton').css("visibility","visible");}
+ if (myvalue=="No"){$('#hobbies').css('visibility','visible'); $('#mybutton').css("visibility","visible");}
+  //alert("hello");
+
+});
+
+//});
+
+</script>
